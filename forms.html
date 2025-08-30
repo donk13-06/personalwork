@@ -7,27 +7,148 @@
 </head>
 
 <body>
-<center>
-    <form>
-        <div>
-            <label for="user">Username</label>
-            <input type="text" id="user" name="user" placeholder="Enter you username" required autofocus size="25">
-        </div>
-        <br>
-        <div>
-            <label for="pass">Password</label>
-            <input type="password" id="pass" name="pass" placeholder="Enter you Password" minlength="7" maxlength="8"
-                required size="25">
-        </div>
-        <br>
-        <div>
-            <button type="submit">Login</button>
+    <center>
+        <h2>Register Form</h2>
+        <fieldset>
+            <legend><b>Enter Your Details</b></legend>
+            <form method="get" action="index.html" enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <td><label for="user">
+                                <h3>Username</h3>
+                            </label> </td>
+                        <td><input type="text" id="user" name="user" placeholder="Enter you username" required autofocus
+                                size="20"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">
+                                <h3>Password</h3>
+                            </label></td>
+                        <td><input type="password" id="pass" name="pass" placeholder="Enter you Password" minlength="7"
+                                maxlength="8" required size="20"></td>
+                    </tr>
 
-            <button type="reset">Reset</button>
-        </div>
+                    <tr>
+                        <td><label for="email">
+                                <h3>Email</h3>
+                            </label></td>
+                        <td><input type="email" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">
+                                <h3>Dob</h3>
+                            </label></td>
+                        <td><input type="date" name="dob" id="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="skills">
+                                <h3>
+                                    Skills
+                                </h3>
+                            </label></td>
+                        <td><select name="skills" id="skills">
+                                <option value="Select Skills">Select Skills</option>
+                                <option value="Adobe InDesign">Adobe InDesign</option>
+                                <option value="Adobe Photoshop">Adobe Photoshop</option>
+                                <option value="Client Server">Client Server</option>
+                                <option value="Content Managment">Content Managment</option>
+                                <option value="Java">Java</option>
+                                <option value="Python">Python</option>
+                                <option value="Full stack">Full stack</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="skills">
+                                <h3>Skills</h3>
+                            </label></td>
+                        <td><select name="skills" id="skills" multiple>
+                                <option value="Select Skills">Select Skills</option>
+                                <option value="Adobe InDesign">Adobe InDesign</option>
+                                <option value="Adobe Photoshop">Adobe Photoshop</option>
+                                <option value="Client Server">Client Server</option>
+                                <option value="Content Managment">Content Managment</option>
+                                <option value="Java">Java</option>
+                                <option value="Python">Python</option>
+                                <option value="Full stack">Full stack</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="search">
+                                <h3>Search</h3>
+                            </label></td>
+                        <td><input type="search" id="search"></td>
 
-    </form>
-</center>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>Hobbbies</h3>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="Singing" name="Hobbies">
+                            <label for="Singing">Singing</label>
+                            <input type="checkbox" id="Reading" name="Hobbies">
+                            <label for="Reading">Reading</label>
+                            <input type="checkbox" id="Playing" name="Hobbies">
+                            <label for="Playing">Playing</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h3>Gender</h3>
+                        </td>
+                        <td>
+                            <input type="radio" id="male" name="Gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="Gender" value="female">
+                            <label for="female">Female</label>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="aboutu">
+                                <h3>About U</h3>
+                            </label></td>
+                        <td> <textarea name="aboutu" id="aboutu" cols="20">Write about you 100words</textarea></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><label>
+                                <h3>Browser</h3>
+                            </label></td>
+                        <td> <input list="browsers">
+                            <datalist id="browsers">
+                                <option value="Edge">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                            </datalist>
+                        </td>
+
+                    <tr>
+                        <td><label for="file">
+                                <h3>Upload Resume</h3>
+                            </label></td>
+                        <td><input type="file" name="file" id="file"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">
+                                <h3>Login</h3>
+                            </button></td>
+
+                        <td><button type="reset">
+                                <h3>Reset</h3>
+                            </button></td>
+                        <!-- <td><input type="image" src="Images/greenstechnologys_logo.png" width="50px" height="50px" name="" id=""></td> -->
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </center>
 </body>
 
 </html>
